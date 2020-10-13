@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+@import "variables.less";
+@import "responsive.css";
+@import "experiencia.css";
+* {
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+	font-family: Varela Round, sans-serif;
+}
+
+
+#relleno {
+	height: 65px;
+	width: 100%;
+}
+
+
+/*NAV*/
+nav {
+	.negrita;
+	font-variant: small-caps;
+	font-size: 20px;
+	position: fixed!important;
+	// border: 1px solid @colorNav;
+	box-shadow: 0px 4px 20px 0px #003459;
+	background-color: rgba(255,255,255,.85);
+	z-index: 10;
+
+}
+
+
+#divPrin {
+
+	h1,h3 {
+		text-shadow: -2px 4px 12px #000000;
+	}
+	mark {
+		background-color: white
+	}
+}
+
+.nav-link.active {
+	color: @colorNav!important;
+	text-decoration: underline;
+}
+
+.navbar-brand {
+	font-size: 25px!important;
+}
+
+#navbarText ul li:last-child {
+	.negrita
+}
+
+.let-spac {
+	letter-spacing: 30px
+}
+
+/*RESUMEN*/
+#Resumen {
+	background-color: #5E6572;
+	box-shadow: 0px 0px 20px 20px #5E6572;
+
+	p {
+		color: white
+	}
+
+}
+
+
+
+strong {	
+	color: #4834d4;
+	font-weight: 900;
+}
+
+/*EXPERIENCIA*/
+.card-body {
+	background-color: rgba(205,205,205,0.7);
+}
+
+.text-blue {
+	color: #003459;
+}
+
+/*PORFOLIO*/
+.carousel-item img {
+	max-height: 300px;
+}
+.lh {
+	line-height: 30px;
+}
+#porfolio {
+	background-color: #439A86;
+    box-shadow: 0px 0px 20px 20px #439A86;
+}
+/*CONTACTO*/
+#contacto {
+	background-color:@colorNav;
+    box-shadow: 0px 0px 20px 20px @colorNav;
+
+}
+/*FOOTER*/
+footer {
+
+		 img {
+				width: 50px;
+				height: 50px; }
+
+		span {
+			.negrita
+		}
+
+
+	}
+@media (min-width: 792px) and (orientation: portrait) {
+	#interiorFooter {
+		display: flex!important;
+		justify-content: space-around;
+
+
+					}
+		}
+
+@media (max-width: 505px) and (orientation: portrait) {
+	
+	#divPrin {
+				h1 {
+				font-size: 55px;
+				letter-spacing: -1px!important;
+					}
+				h3 {
+				padding: 0!important;
+				margin-bottom: 70px!important;
+					}
+			}
+		
+	.redireccion {
+		p {
+			font-size: 25px;
+		}
+				}
+
+}
